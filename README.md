@@ -24,7 +24,6 @@
 
 1. **Install Dependencies**:
    - Python dependencies: Install using `pip install -r requirements.txt` (create a `requirements.txt` if not present).
-   - Node.js dependencies: Install using `npm install` (if applicable).
 
 2. **Run the Backend**:
    - Navigate to the project directory and run:
