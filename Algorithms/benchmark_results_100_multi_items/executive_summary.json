@@ -1,0 +1,93 @@
+{
+  "benchmark_overview": {
+    "total_iterations": 8400,
+    "item_count_range": "2-15",
+    "methods_tested": [
+      "random",
+      "high_preference",
+      "balanced",
+      "category_diverse",
+      "time_efficient",
+      "mixed"
+    ],
+    "success_rate": 100.0
+  },
+  "key_findings": {
+    "best_overall_method": "time_efficient",
+    "fastest_optimization": "category_diverse",
+    "most_item_efficient": "time_efficient",
+    "statistical_significance": true,
+    "kruskal_p_value": 0.0
+  },
+  "performance_by_size": {
+    "2": "high_preference",
+    "3": "high_preference",
+    "4": "high_preference",
+    "5": "high_preference",
+    "6": "high_preference",
+    "7": "high_preference",
+    "8": "balanced",
+    "9": "balanced",
+    "10": "balanced",
+    "11": "balanced",
+    "12": "time_efficient",
+    "13": "balanced",
+    "14": "balanced",
+    "15": "balanced"
+  },
+  "average_metrics": {
+    "route_time_min": 20.78377919823536,
+    "items_visited": 11.451547619047618,
+    "optimization_time_sec": 0.0027685822475524177,
+    "objective_score": 0.7619039588807499,
+    "avg_walk_distance_m": 103.4874654055523,
+    "avg_movement_time_min": 1.5401643807750458,
+    "avg_visit_time_per_item_min": 1.3327680814007556,
+    "avg_revisit_rate": 0.024202525230126403,
+    "avg_budget_overrun_min": 0.0
+  },
+  "method_comparison": {
+    "random": {
+      "avg_route_time": 22.655158663076875,
+      "avg_items_visited": 11.905,
+      "avg_objective_score": 0.6640192938777161,
+      "avg_optimization_time": 0.0034653755596705848,
+      "success_rate": 100.0
+    },
+    "high_preference": {
+      "avg_route_time": 19.75764223560457,
+      "avg_items_visited": 11.142857142857142,
+      "avg_objective_score": 0.8255569752012981,
+      "avg_optimization_time": 0.0024917117186955043,
+      "success_rate": 100.0
+    },
+    "balanced": {
+      "avg_route_time": 19.498882339627812,
+      "avg_items_visited": 10.571428571428571,
+      "avg_objective_score": 0.8252906345441476,
+      "avg_optimization_time": 0.0018122288158961704,
+      "success_rate": 100.0
+    },
+    "category_diverse": {
+      "avg_route_time": 20.86014077484813,
+      "avg_items_visited": 11.142857142857142,
+      "avg_objective_score": 0.6763154687856547,
+      "avg_optimization_time": 0.0017099979945591518,
+      "success_rate": 100.0
+    },
+    "time_efficient": {
+      "avg_route_time": 20.968998442735433,
+      "avg_items_visited": 12.428571428571429,
+      "avg_objective_score": 0.8319643942847578,
+      "avg_optimization_time": 0.0037517932483128137,
+      "success_rate": 100.0
+    },
+    "mixed": {
+      "avg_route_time": 20.961852733519358,
+      "avg_items_visited": 11.518571428571429,
+      "avg_objective_score": 0.7482769865909251,
+      "avg_optimization_time": 0.0033803861481802805,
+      "success_rate": 100.0
+    }
+  }
+}

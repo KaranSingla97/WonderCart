@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walmart Adventure Map</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      overflow: hidden; /* Prevent scrolling on the body */
+      font-family: 'Fredoka One', cursive;
+      background-color: #f0f4f8;
+    }
+    .nav-button {
+        transition: transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    .nav-button:hover { transform: translateY(-2px); }
+    .nav-button:active { transform: translateY(1px); }
+    
+    .map-container-wrapper {
+        position: relative;
+        width: 100%;
+        /* Modern CSS for aspect ratio, based on map dimensions (190 width / 185 height) */
+        aspect-ratio: 190 / 185;
+    }
+
+    #map-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* FIX: Added for smooth zoom */
+        transition: transform 0.2s ease-in-out;
+        transform-origin: top left;
+    }
+
+    #path-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+  </style>
+</head>
+<body class="flex flex-col h-screen p-2 sm:p-4 bg-gray-100">
+  <div class="w-full max-w-7xl mx-auto bg-white rounded-2xl shadow-2xl flex flex-col flex-1 overflow-hidden">
+    
+    <header class="flex-shrink-0 p-4 border-b">
+        <div class="flex justify-between items-center bg-blue-500 text-white p-4 rounded-xl shadow-md">
+            <div>
+              <h1 class="text-xl md:text-3xl" style="font-weight: 400;">Adventure Map</h1>
+              <div id="zoom-controls" class="flex items-center gap-2 mt-2">
+                  <button id="zoom-out-btn" class="w-8 h-8 bg-blue-400 hover:bg-blue-600 rounded-full font-bold text-md flex items-center justify-center transition-colors">-</button>
+                  <button id="zoom-in-btn" class="w-8 h-8 bg-blue-400 hover:bg-blue-600 rounded-full font-bold text-md flex items-center justify-center transition-colors">+</button>
+              </div>
+            </div>
+            <div class="text-right">
+                <p class="text-base md:text-lg">Points</p>
+                <p id="points-display" class="text-2xl md:text-3xl font-bold">0</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 flex flex-col lg:flex-row gap-6 p-4 overflow-y-auto">
+        <div class="flex-1 flex flex-col items-center justify-center min-w-0">
+          <div class="map-container-wrapper w-full max-w-md lg:max-w-none border-4 border-blue-300 rounded-lg overflow-auto">
+            <div id="map-container" class="grid">
+              </div>
+          </div>
+        </div>
+
+        <aside class="w-full lg:w-72 xl:w-80 flex-shrink-0 flex flex-col mt-4 lg:mt-0">
+          <div id="controls-container" class="bg-gray-50 p-4 rounded-lg shadow-md h-full flex flex-col items-center text-center justify-center">
+             <p class="text-gray-500">Loading your adventure...</p>
+          </div>
+           <div id="results-container" class="mt-4 text-center h-16 flex items-center justify-center"></div>
+        </aside>
+    </main>
+
+  </div>
+
+  <script src="../child-app.js" defer></script>
+</body>
+</html>

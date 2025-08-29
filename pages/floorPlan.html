@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walmart Pathfinding App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc; /* slightly softer than #f0f4f8 */
+      color: #1f2937; /* improved text contrast */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+    }
+
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-gold: #fbbf24;
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--primary-blue);
+      letter-spacing: -0.5px;
+    }
+
+    .map-grid-cell {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .map-container {
+      position: relative;
+    }
+
+    #path-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .chat-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #fdbb30; /* Walmart Gold */
+    color: #003f87; /* Walmart Blue */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+    z-index: 1000;
+    }
+    .chat-button:hover {
+        transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6 bg-gradient-to-br from-blue-50 to-white text-gray-800">
+
+  <!-- FIX: Reduced the vertical gap on mobile (gap-4) while keeping the larger gap for desktop (lg:gap-10) -->
+  <div class="w-full max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl p-6 md:p-10 flex flex-col lg:flex-row gap-4 lg:gap-10">
+
+    <!-- Left Section -->
+    <div class="flex-grow flex flex-col">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-[color:var(--primary-blue)]">
+          🧭 Store Navigation
+        </h1>
+      </div>
+
+      <!-- Map Area -->
+      <div id="map-container" class="map-container grid border-4 border-[color:var(--accent-gold)] rounded-2xl overflow-hidden shadow-inner bg-gray-100">
+        <svg id="path-overlay"></svg>
+      </div>
+
+      <!-- Route Results -->
+      <div id="results-container" class="mt-6 text-center h-8 text-[color:var(--primary-blue)] font-medium text-lg"></div>
+    </div>
+
+    <!-- Sidebar / Controls -->
+    <aside class="w-full lg:w-72 xl:w-80 flex-shrink-0">
+      <div class="bg-gradient-to-br from-yellow-50 to-blue-50 border border-[color:var(--accent-gold)] p-6 rounded-2xl shadow-lg h-full flex flex-col gap-4">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-4 h-4 rounded-full bg-[color:var(--accent-gold)]"></div>
+          <h2 class="text-lg font-semibold text-[color:var(--primary-blue)]">Smart Controls</h2>
+        </div>
+        <div id="controls-container" class="flex flex-col gap-4">
+          <!-- Controls will be injected by app.js -->
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+    <a href="chatbot.html" class="chat-button" title="Chat with Assistant">
+        <i class="fa-solid fa-comments text-2xl"></i>
+    </a>
+  <script src="../app.js" defer></script>
+</body>
+</html>

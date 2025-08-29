@@ -1,0 +1,145 @@
+Department ID: 0
+Name: Walkable Area
+
+
+Department ID: 1
+Name: Shipping
+
+
+Department ID: 2
+Name: Organic Raspberries
+Price: $5.49
+Stock Status: In Stock
+Available Quantity: 25
+Similar Departments: 3, 10
+
+
+Department ID: 3
+Name: Organic Strawberries
+Price: $4.99
+Stock Status: In Stock
+Available Quantity: 4
+Similar Departments: 2, 5, 8, 7, 10
+
+
+Department ID: 4
+Name: Organic Fuji Apple
+Price: $0.79
+Stock Status: In Stock
+Available Quantity: 18
+Similar Departments: 7
+
+
+Department ID: 5
+Name: Organic Hass Avocado
+Price: $2.19
+Stock Status: In Stock
+Available Quantity: 33
+Similar Departments: 3, 8
+
+
+Department ID: 7
+Name: Carrot
+Price: $0.25
+Stock Status: In Stock
+Available Quantity: 50
+Similar Departments: 3, 4, 8
+
+
+Department ID: 8
+Name: Organic Baby Spinach
+Price: $3.99
+Stock Status: In Stock
+Available Quantity: 19
+Similar Departments: 3, 5, 7
+
+
+Department ID: 9
+Name: Sporting Goods
+Price: $24.99
+Stock Status: In Stock
+Available Quantity: 48
+
+
+Department ID: 10
+Name: Dairy Products
+Price: $2.49
+Stock Status: In Stock
+Available Quantity: 14
+Similar Departments: 2, 3
+Top Brand: Amul,Mother Dairy
+
+
+Department ID: 11
+Name: Men's Wear
+Price: $29.99
+Stock Status: In Stock
+Available Quantity: 13
+Similar Departments: 14, 15, 21
+
+
+Department ID: 12
+Name: Furniture
+Price: $149.99
+Stock Status: In Stock
+Available Quantity: 46
+
+
+Department ID: 13
+Name: Infants' Wear
+Price: $12.50
+Stock Status: In Stock
+Available Quantity: 15
+Similar Departments: 15, 20
+
+
+Department ID: 14
+Name: Ladies' Wear
+Price: $34.99
+Stock Status: In Stock
+Available Quantity: 8
+Similar Departments: 11, 15, 21
+
+
+Department ID: 15
+Name: Kids' Wear
+Price: $15.99
+Stock Status: In Stock
+Available Quantity: 17
+Similar Departments: 13, 11, 14, 20
+
+
+Department ID: 16
+Name: Home Decor
+Price: $49.99
+Stock Status: In Stock
+Available Quantity: 6
+Similar Departments: 22
+
+
+Department ID: 20
+Name: Toys
+Price: $19.99
+Stock Status: In Stock
+Available Quantity: 43
+Similar Departments: 13, 15
+
+
+Department ID: 21
+Name: Electronics
+Price: $299.99
+Stock Status: In Stock
+Available Quantity: 46
+Similar Departments: 11, 14
+
+
+Department ID: 22
+Name: Housewares
+Price: $39.99
+Stock Status: In Stock
+Available Quantity: 22
+Similar Departments: 16
+
+For exact location refer to the smart cart mode on this app. It will show you the shortest distance from your current location
+
+Shopping with kids can be stressful — for both parents and store staff. Child Mode turns that challenge into an opportunity by transforming shopping into a gamified adventure.

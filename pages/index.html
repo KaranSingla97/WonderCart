@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Walmart</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Style for the floating chat button */
+        .chat-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #fdbb30; /* Walmart Gold */
+            color: #003f87; /* Walmart Blue */
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease-in-out;
+            z-index: 1000;
+        }
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body class="bg-[#003F87] text-white">
+
+    <div class="flex flex-col items-center justify-center min-h-screen p-8 text-center">
+        
+        <header class="flex-grow flex flex-col items-center justify-center">
+            <i class="fa-solid fa-cart-shopping text-5xl mb-6"></i>
+            
+            <h1 class="text-4xl font-bold">Welcome to Walmart New York, Albany</h1>
+            <p class="mt-2 text-blue-200 text-lg">
+                <i class="fa-solid fa-location-dot"></i>
+                1770 Central Ave, Albany, NY 12205
+            </p>
+
+            <h2 class="mt-16 text-2xl font-semibold">Choose Your Shopping Experience</h2>
+            <p class="text-blue-200 mt-1">Select how you'd like to navigate our store today</p>
+            
+            <div class="w-full max-w-md mt-6 space-y-4">
+                <a href="products.html" class="block w-full text-left p-6 bg-white text-blue-800 rounded-xl shadow-lg hover:scale-105 transition-transform">
+                    <h3 class="font-bold text-lg"><i class="fa-solid fa-lightbulb mr-2"></i>Smart Cart Mode</h3>
+                    <p class="text-gray-600">AI-powered pathfinding with high-fidelity store mapping</p>
+                </a>
+                
+                <!-- FIX: Corrected the href to link to the child products page -->
+                <a href="child-products.html" class="block w-full text-left p-6 bg-yellow-400 text-gray-800 rounded-xl shadow-lg hover:scale-105 transition-transform">
+                    <h3 class="font-bold text-lg"><i class="fa-solid fa-child mr-2"></i>Child Mode</h3>
+                    <p class="text-gray-600">Gamified shopping adventure with GreenBot mascot and rewards</p>
+                </a>
+            </div>
+        </header>
+
+        <footer class="w-full max-w-md pt-8">
+            <div class="flex justify-around items-center text-blue-200">
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-route text-2xl"></i>
+                    <span class="text-xs mt-1">Smart Navigation</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-comments text-2xl"></i>
+                    <span class="text-xs mt-1">AI Assistant</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-star text-2xl"></i>
+                    <span class="text-xs mt-1">Rewards System</span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Floating Chatbot Button -->
+    <a href="chatbot.html" class="chat-button" title="Chat with Assistant">
+        <i class="fa-solid fa-comments text-2xl"></i>
+    </a>
+
+</body>
+</html>

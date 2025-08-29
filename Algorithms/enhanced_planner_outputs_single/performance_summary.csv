@@ -1,0 +1,9 @@
+Metric,Shortest Path,Optimized Path,Improvement
+Total Time (minutes),14.58,16.40,-12.5%
+Items Collected,9,11,+2
+Must Items Covered,6/6,6/6,✓
+Recommendation Items,3,5,+2
+Satisfaction Score,0.7123,0.8147,+14.4%
+Time Efficiency (%),67.6%,63.6%,-4.0%
+Route Smoothness,0.60,0.60,+0.00
+Category Coverage,6,6,+0

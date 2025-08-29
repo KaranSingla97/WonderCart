@@ -1,0 +1,106 @@
+{
+    "Organic Raspberries": [
+        {
+            "product": "Organic Strawberries"
+        },
+        {
+            "product": "Bag of Organic Bananas"
+        }
+    ],
+    "Organic Strawberries": [
+        {
+            "product": "Organic Raspberries"
+        },
+        {
+            "product": "Organic Hass Avocado"
+        },
+        {
+            "product": "Bag of Organic Bananas"
+        },
+        {
+            "product": "Organic Baby Spinach"
+        },
+        {
+            "product": "Banana"
+        }
+    ],
+    "Organic Fuji Apple": [
+        {
+            "product": "Banana"
+        }
+    ],
+    "Banana": [
+        {
+            "product": "Organic Fuji Apple"
+        },
+        {
+            "product": "Organic Avocado"
+        },
+        {
+            "product": "Strawberries"
+        },
+        {
+            "product": "Large Lemon"
+        },
+        {
+            "product": "Organic Baby Spinach"
+        },
+        {
+            "product": "Organic Strawberries"
+        }
+    ],
+    "Bag of Organic Bananas": [
+        {
+            "product": "Organic Raspberries"
+        },
+        {
+            "product": "Organic Hass Avocado"
+        },
+        {
+            "product": "Organic Strawberries"
+        },
+        {
+            "product": "Organic Baby Spinach"
+        }
+    ],
+    "Organic Hass Avocado": [
+        {
+            "product": "Bag of Organic Bananas"
+        },
+        {
+            "product": "Organic Strawberries"
+        },
+        {
+            "product": "Organic Baby Spinach"
+        }
+    ],
+    "Organic Baby Spinach": [
+        {
+            "product": "Organic Hass Avocado"
+        },
+        {
+            "product": "Organic Strawberries"
+        },
+        {
+            "product": "Bag of Organic Bananas"
+        },
+        {
+            "product": "Banana"
+        }
+    ],
+    "Organic Avocado": [
+        {
+            "product": "Banana"
+        }
+    ],
+    "Strawberries": [
+        {
+            "product": "Banana"
+        }
+    ],
+    "Large Lemon": [
+        {
+            "product": "Banana"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "-1": { "name": "Walls", "icon": "fa-person-walking", "similar_ids": [] },
+    "0": { "name": "Walkable Area", "icon": "fa-person-walking", "similar_ids": [] },
+    "1": { "name": "Shipping", "icon": "fa-truck-fast", "similar_ids": [] },
+    "2": { "name": "Organic Raspberries", "icon": "fa-raspberry-pi", "similar_ids": [3, 10], "price": 5.49 },
+    "3": { "name": "Organic Strawberries", "icon": "fa-seedling", "similar_ids": [2, 5, 8, 7, 10], "price": 4.99 },
+    "4": { "name": "Organic Fuji Apple", "icon": "fa-apple-whole", "similar_ids": [7], "price": 0.79 },
+    "5": { "name": "Organic Hass Avocado", "icon": "fa-lemon", "similar_ids": [3, 8], "price": 2.19 },
+    "7": { "name": "Carrot", "icon": "fa-carrot", "similar_ids": [3, 4, 8], "price": 0.25 },
+    "8": { "name": "Organic Baby Spinach", "icon": "fa-leaf", "similar_ids": [3, 5, 7], "price": 3.99 },
+    "9": { "name": "Sporting Goods", "icon": "fa-football-ball", "similar_ids": [], "price": 24.99 },
+    "10": { "name": "Dairy Products", "icon": "fa-cheese", "similar_ids": [2, 3], "price": 6.49 },
+    "11": { "name": "Men's Wear", "icon": "fa-mars", "similar_ids": [14, 15, 21], "price": 29.99 },
+    "12": { "name": "Furniture", "icon": "fa-chair", "similar_ids": [], "price": 149.99 },
+    "13": { "name": "Infants' Wear", "icon": "fa-baby", "similar_ids": [15, 20], "price": 12.50 },
+    "14": { "name": "Ladies' Wear", "icon": "fa-venus", "similar_ids": [11, 15, 21], "price": 34.99 },
+    "15": { "name": "Kids' Wear", "icon": "fa-child", "similar_ids": [13, 11, 14, 20], "price": 15.99 },
+    "16": { "name": "Home Decor", "icon": "fa-couch", "similar_ids": [22], "price": 49.99 },
+    "20": { "name": "Toys", "icon": "fa-puzzle-piece", "similar_ids": [13, 15], "price": 19.99 },
+    "21": { "name": "Electronics", "icon": "fa-tv", "similar_ids": [11, 14], "price": 299.99 },
+    "22": { "name": "Housewares", "icon": "fa-blender", "similar_ids": [16], "price": 39.99 }
+}
